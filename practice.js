@@ -18,9 +18,9 @@
 // }
 
 
-console.log(findSmallesNumber([3, 8, 12, -2, 15])); // -2
-console.log(findSmallesNumber([100, 54, 8, 12, 47])); // 8
-console.log(findSmallesNumber([7, 21, 84, 15, 4])); // 4
+// console.log(findSmallesNumber([3, 8, 12, -2, 15])); // -2
+// console.log(findSmallesNumber([100, 54, 8, 12, 47])); // 8
+// console.log(findSmallesNumber([7, 21, 84, 15, 4])); // 4
 
 // .............................
 // Задача №2
@@ -47,9 +47,16 @@ console.log(findSmallesNumber([7, 21, 84, 15, 4])); // 4
 //   // Change code above this line
 //   return message;
 // }
+const checkStorage = (available, ordered)=>
 
-// checkStorage(100, 50);
-// checkStorage(100, 130);
-// checkStorage(200, 20);
-// checkStorage(200, 150);
+(ordered < available) ? "Not enough goods in stock!" :"Order is processed, our manager will contact you."
+
+const r1 = checkStorage (100,50);
+
+console.log(r1);
+
+checkStorage(100, 50);
+checkStorage(100, 130);
+checkStorage(200, 20);
+checkStorage(200, 150);
 // .............................
